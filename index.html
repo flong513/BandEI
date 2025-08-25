@@ -46,8 +46,6 @@ Deep Muscles and Tendons</title>
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -72,12 +70,10 @@ Deep Muscles and Tendons</h1>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>University of Washington</span>
-              <span class="author-block">&middot;</span>
-              <span class="author-block"><sup>2</sup>Gwangju Institute of Science and Technology</span>
-              <span class="author-block">&middot;</span>
-              <span class="author-block"><sup>3</sup>University of Michigan</span>
-            </div>
+            <span class="author-block">University of Washington<sup>1</sup></span>
+            <span class="author-block">Gwangju Institute of Science and Technology<sup>2</sup></span>
+            <span class="author-block">University of Michigan<sup>3</sup></span>
+          </div>
             <div class="is-size-5 publication-authors">
               <span class="author-block">UIST 2025</span>
               <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
@@ -109,7 +105,7 @@ Deep Muscles and Tendons</h1>
                   </span> -->
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -117,7 +113,7 @@ Deep Muscles and Tendons</h1>
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link
                 <span class="link-block">
@@ -142,14 +138,14 @@ Deep Muscles and Tendons</h1>
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/Teaser.pdf" alt="BandEI Teaser" style="width: 100%; height: auto;">
+      <img src="static/images/Teaser.png" alt="BandEI Teaser" style="width: 100%; height: auto;">
     </div>
   </div>
 </section>
 <!-- End teaser Figure -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero is-light" id = "abstract">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -182,12 +178,42 @@ Deep Muscles and Tendons</h1>
   </div>
 </section>
 <!-- End paper abstract -->
+ 
 
-<!-- Video Gallery -->
-<section class="hero is-small">
+<!-- Fabrication and Design Video Gallery -->
+<section class="hero is-small" id="fabrication">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3 has-text-centered">Demo Videos</h2>
+      <h2 class="title is-3 has-text-centered">Interactive Design and Fabrication Pipeline</h2>
+      
+      <!-- Two videos with arrow -->
+      <div class="columns is-centered is-vcentered">
+        <div class="column is-5">
+          <video poster="" id="design-video" autoplay controls muted loop height="100%">
+            <source src="static/videos/interactive_design.mp4" type="video/mp4">
+          </video>
+          <h3 class="subtitle has-text-centered">Interactive Design Interface</h3>
+        </div>
+        <div class="column is-2 has-text-centered">
+          <i class="fas fa-arrow-right" style="font-size: 3rem; color: #363636;"></i>
+        </div>
+        <div class="column is-5">
+          <video poster="" id="fabrication-video" autoplay controls muted loop height="100%">
+            <source src="static/videos/fabrication_pipeline.mp4" type="video/mp4">
+          </video>
+          <h3 class="subtitle has-text-centered">Fabrication Pipeline</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Fabrication and Design video gallery -->
+
+<!-- Video Gallery -->
+<section class="hero is-small" id="applications">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Application One - Microgesture Hand Classification</h2>
       
       <!-- Top row of 3 videos -->
       <div class="columns is-multiline">
@@ -236,6 +262,54 @@ Deep Muscles and Tendons</h1>
   </div>
 </section>
 <!-- End video gallery -->
+
+<!-- Application Two Video Gallery -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Application Two - Head Position Monitoring</h2>
+      
+      <!-- Single video or multiple videos as needed -->
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <video poster="" id="video7" autoplay controls muted loop height="100%">
+            <source src="static/videos/app2_rpy.mp4" type="video/mp4">
+          </video>
+          <h3 class="subtitle has-text-centered">Real-time head position tracking using BandEI</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Application Two video gallery -->
+
+
+<!-- Application Three Video Gallery -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Application Three - Gait Monitoring</h2>
+      
+      <!-- Two videos side by side -->
+      <div class="columns is-centered">
+        <div class="column is-6">
+          <video poster="" id="video10" autoplay controls muted loop height="100%">
+            <source src="static/videos/app3_run1.mp4" type="video/mp4">
+          </video>
+          <h3 class="subtitle has-text-centered">Walking/Running Gait Analysis</h3>
+        </div>
+        <div class="column is-6">
+          <video poster="" id="video11" autoplay controls muted loop height="100%">
+            <source src="static/videos/app3_run2.mp4" type="video/mp4">
+          </video>
+          <h3 class="subtitle has-text-centered">Elliptical/Stair Master Gait Analysis</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Application Three video gallery -->
+
 
 <!-- Image carousel -->
 <!-- <section class="hero is-small">
@@ -350,12 +424,13 @@ Deep Muscles and Tendons</h1>
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <section class="section" id="bibtex">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>TBD</code></pre>
     </div>
 </section>
+
 <!--End BibTex citation -->
 
 
